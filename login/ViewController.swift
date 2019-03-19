@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var usernameTextfield: UITextField!
+    @IBOutlet weak var forgotUserName: UIButton!
+    @IBOutlet weak var forgotPassword: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +22,13 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         segue.destination.navigationItem.title = usernameTextfield.text
     }
+    
+    @IBAction func forgotUsernameButtonPressed(_ sender: Any) {
+    }
+    
+    @IBAction func forgotPasswordButtonPressed(_ sender: Any) {
+    }
+    
 
 }
 

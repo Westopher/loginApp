@@ -48,10 +48,16 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0RN-Ct-vhR">
                                         <rect key="frame" x="0.0" y="0.0" width="121" height="30"/>
                                         <state key="normal" title="Forgot Usename?"/>
+                                        <connections>
+                                            <action selector="forgotUsernameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XEC-gb-7dZ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0gs-As-7e5">
                                         <rect key="frame" x="171" y="0.0" width="123" height="30"/>
                                         <state key="normal" title="Forgot Password?"/>
+                                        <connections>
+                                            <action selector="forgotPasswordButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i8N-LY-643"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -68,7 +74,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="JwK-bC-shF"/>
                     <connections>
+                        <outlet property="forgotPassword" destination="0gs-As-7e5" id="uaj-E8-jaf"/>
+                        <outlet property="forgotUserName" destination="0RN-Ct-vhR" id="bbC-Jz-5WG"/>
                         <outlet property="usernameTextfield" destination="crv-Q1-XTM" id="QiA-HH-pZO"/>
+                        <segue destination="Dp6-Lh-jJl" kind="show" id="Lhe-yY-FbS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -110,4 +119,7 @@
             <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Lhe-yY-FbS"/>
+    </inferredMetricsTieBreakers>
 </document>
