@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="upz-52-9DL">
-                                <rect key="frame" x="20" y="216" width="335" height="150"/>
+                                <rect key="frame" x="20" y="164" width="335" height="150"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="crv-Q1-XTM">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
@@ -43,7 +43,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="LNa-As-EPh">
-                                <rect key="frame" x="40.5" y="396" width="294" height="30"/>
+                                <rect key="frame" x="40.5" y="344" width="294" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0RN-Ct-vhR">
                                         <rect key="frame" x="0.0" y="0.0" width="121" height="30"/>
@@ -74,9 +74,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="JwK-bC-shF"/>
                     <connections>
-                        <outlet property="forgotPassword" destination="0gs-As-7e5" id="uaj-E8-jaf"/>
-                        <outlet property="forgotUserName" destination="0RN-Ct-vhR" id="bbC-Jz-5WG"/>
-                        <outlet property="usernameTextfield" destination="crv-Q1-XTM" id="QiA-HH-pZO"/>
+                        <outlet property="forgotPassword" destination="0gs-As-7e5" id="lCr-PG-58D"/>
+                        <outlet property="forgotUsername" destination="0RN-Ct-vhR" id="YAP-ux-vdU"/>
+                        <outlet property="usernameTextField" destination="crv-Q1-XTM" id="blY-vl-Co8"/>
                         <segue destination="Dp6-Lh-jJl" kind="show" identifier="LandingSegue" id="Lhe-yY-FbS"/>
                     </connections>
                 </viewController>
@@ -94,7 +94,7 @@
                         <color key="backgroundColor" red="0.97266980739999997" green="0.55661710239999995" blue="0.4856265172" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="uzD-qu-jaC"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Landing Page" largeTitleDisplayMode="always" id="Ww5-oO-xAE"/>
+                    <navigationItem key="navigationItem" title="Landing Page" id="Ww5-oO-xAE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xva-HL-85T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -105,8 +105,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ivu-sw-uwx" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="sYi-lN-Sc4">
-                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sYi-lN-Sc4">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
