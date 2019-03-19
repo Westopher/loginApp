@@ -24,9 +24,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func forgotUsernameButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "LandingSegue", sender: forgotUsernameButtonPressed)
     }
     
     @IBAction func forgotPasswordButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "LandingSegue", sender: forgotPasswordButtonPressed)
     }
     
 

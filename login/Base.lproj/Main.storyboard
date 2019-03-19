@@ -77,7 +77,7 @@
                         <outlet property="forgotPassword" destination="0gs-As-7e5" id="uaj-E8-jaf"/>
                         <outlet property="forgotUserName" destination="0RN-Ct-vhR" id="bbC-Jz-5WG"/>
                         <outlet property="usernameTextfield" destination="crv-Q1-XTM" id="QiA-HH-pZO"/>
-                        <segue destination="Dp6-Lh-jJl" kind="show" id="Lhe-yY-FbS"/>
+                        <segue destination="Dp6-Lh-jJl" kind="show" identifier="LandingSegue" id="Lhe-yY-FbS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
